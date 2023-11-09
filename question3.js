@@ -9,6 +9,7 @@ function f(n){
       count++;
       n=Math.floor(n/10);
  
+      
     }
     return count;
   }
