@@ -19,15 +19,19 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 */
 
 var isPalindrome = function(x) {
-    let v=x;
-    let r=0;
-    while(v>0){
-        const l=v%10;
-        r=r*10+l
-        v=Math.floor(v/10);
+    // let v=x;
+    // let r=0;
+    // while(v>0){
+    //     const l=v%10;
+    //     r=r*10+l
+    //     v=Math.floor(v/10);
         
    
-    }
-     return x==r;
+    // }
+    //  return x==r;
+
+    var s=x.toString();
+    var t=s.split("").reverse().join("");
+    return s==t;
    
    };
